@@ -656,6 +656,7 @@ body {
 </head>
 <body>
 
+<!-- ── HEADER ─────────────────────────────────────────────────────────── -->
 <div class="header">
   <div class="header-top">
     <div class="logo">
@@ -673,6 +674,7 @@ body {
     </div>
   </div>
 
+  <!-- Search (visible only on store tab) -->
   <div class="search-wrap" id="searchWrap">
     <span class="search-icon">🔍</span>
     <input class="search-input" id="searchInput"
@@ -688,6 +690,9 @@ body {
   </div>
 </div>
 
+<!-- ══════════════════════════════════════════════════════════════════
+     STORE PAGE
+     ══════════════════════════════════════════════════════════════════ -->
 <div class="page active" id="page-store">
   <div id="storeLoading">
     <div class="skel-card skeleton"></div>
@@ -710,6 +715,9 @@ body {
   </div>
 </div>
 
+<!-- ══════════════════════════════════════════════════════════════════
+     CART PAGE
+     ══════════════════════════════════════════════════════════════════ -->
 <div class="page" id="page-cart">
   <div class="cart-empty" id="cartEmpty">
     <div class="cart-empty-emoji">🛒</div>
@@ -723,6 +731,9 @@ body {
   </div>
 </div>
 
+<!-- ══════════════════════════════════════════════════════════════════
+     SUBSCRIPTIONS PAGE
+     ══════════════════════════════════════════════════════════════════ -->
 <div class="page" id="page-subs">
   <div id="subsLoading" class="spinner-wrap">
     <div class="spinner"></div>
@@ -735,6 +746,7 @@ body {
   </div>
 </div>
 
+<!-- ── CHECKOUT BAR (Fixed bottom) ─────────────── -->
 <div class="checkout-bar" id="checkoutBar" style="display:none">
   <button class="checkout-btn" id="checkoutBtn" onclick="doCheckout()">
     <span>💳</span>
@@ -745,6 +757,9 @@ body {
 
 <div class="toast" id="toast"></div>
 
+<!-- ══════════════════════════════════════════════════════════════════
+     JAVASCRIPT
+     ══════════════════════════════════════════════════════════════════ -->
 <script>
 'use strict';
 
@@ -762,8 +777,8 @@ const urlId   = new URLSearchParams(location.search).get('user_id');
 const USER_ID = tgUser?.id ? String(tgUser.id) : (urlId ?? null);
 const USER_NAME = tgUser?.first_name || 'User';
 
-// यहाँ हमने आपका नया Cloudflare सिक्योर लिंक जोड़ दिया है!
-const BASE = 'https://fighter-ordinary-glossary-jumping.trycloudflare.com';
+// 🔴🔴🔴 आपका नया Cloudflare लिंक (Updated) 🔴🔴🔴
+const BASE = 'https://there-bell-jets-logos.trycloudflare.com';
 
 /* ── State ────────────────────────────────────────────────────────────── */
 let allChannels  = [];
